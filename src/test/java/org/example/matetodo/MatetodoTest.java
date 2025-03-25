@@ -1,6 +1,5 @@
-package org.example.matetodoTest;
+package org.example.matetodo;
 
-import org.example.matetodo.Matetodo;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -32,7 +31,7 @@ public class MatetodoTest {
         int resultado = matetodo.sumarImparesConsecutivos(limite);
 
         // Assert
-        assertEquals(9, resultado); // 1 + 3 + 5 = 9
+        assertEquals(9, resultado);
     }
 
     @Test
@@ -44,7 +43,7 @@ public class MatetodoTest {
         int resultado = matetodo.sumarImparesConsecutivos(limite);
 
         // Assert
-        assertEquals(25, resultado); // 1 + 3 + 5 + 7 + 9 = 25
+        assertEquals(25, resultado);
     }
 
     @Test
@@ -56,7 +55,7 @@ public class MatetodoTest {
         int resultado = matetodo.sumarImparesConsecutivos(limite);
 
         // Assert
-        assertEquals(1, resultado); // Solo hay un número impar: 1
+        assertEquals(1, resultado);
     }
 
     @Test
@@ -68,6 +67,6 @@ public class MatetodoTest {
         int resultado = matetodo.sumarImparesConsecutivos(limite);
 
         // Assert
-        assertEquals(0, resultado); // No hay números impares positivos en un rango negativo
+        assertEquals(0, resultado);
     }
 }
